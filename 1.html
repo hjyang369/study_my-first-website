@@ -4,7 +4,15 @@
  <title>WEB1 - HTML</title>
  <meta charset="utf-8">
 </head>
+ <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-340ZH3Z5B7"></script>
+ <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-340ZH3Z5B7');
+ </script>
 <body>
     <h1><a href="index.html">WEB</a></h1>
     <ol>
@@ -78,5 +86,61 @@
         <td>98.1%</td>
     </tr>
  </table>
+ <br>동영상 삽입
+  <P>동영상 공유 부분에서 퍼가기 누르면 소스코드 나옴</P>
+  <p>
+   <iframe width="560" height="315" 
+   src="https://www.youtube.com/embed/ucoOzjxIyuM" 
+   title="YouTube video player" frameborder="0" 
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+   allowfullscreen></iframe>
+  </p>
+ <br>체크박스 넣기
+  <input type="checkbox">
+  <input type="checkbox">
+ <br>
+ <br>댓글 달기
+  <a href="https://disqus.com/">diqus 홈페이지</a>
+  <a href="https://livere.com/">livere 홈페이지</a>
+  <br><br>
+  <div id="disqus_thread"></div>
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-hbquvmnl25.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ <br>
+ <br>채팅 기능
+  <a href="https://www.tawk.to/">tawk 홈페이지</a>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+   (function(){
+   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+   s1.async=true;
+   s1.src='https://embed.tawk.to/643fb30131ebfa0fe7f9318b/1gucd6g8p';
+   s1.charset='UTF-8';
+   s1.setAttribute('crossorigin','*');
+   s0.parentNode.insertBefore(s1,s0);
+   })();
+  </script>
+  <!--End of Tawk.to Script-->
+ <br>
+ <br>방문자 수 조회 head 요소 바로 뒤에 복붙
+  <a href="hhttps://analytics.google.com/analytics/web/provision/?hl=ko&pli=1#/provision">
+   구글애널리틱스 홈페이지</a>
 </body>
 </html>
