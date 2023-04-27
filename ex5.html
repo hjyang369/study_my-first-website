@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Conditional statements</h1>
+        <h2>Program</h2>
+       <script> 
+         document.write("1<br>");
+         document.write("2<br>");
+         document.write("3<br>");
+         document.write("4<br>");
+       </script>
+        <h2>IF-true</h2> 
+       <script> 
+          document.write("1<br>");
+          if(true){
+          document.write("2<br>");
+          } else {
+          document.write("3<br>");
+          }
+          document.write("4<br>");
+       </script>
+        <h2>IF-false</h2> 
+       <script> 
+          document.write("1<br>");
+          if(false){
+          document.write("2<br>");
+          } else {
+          document.write("3<br>");
+          }
+          document.write("4<br>");
+       </script>
+
+            <p>오늘은 자바스크립트와 css를 같이 사용하는 수업이다</p>
+            <input type="button" value="night" onclick="
+            document.querySelector('body').style.backgroundColor ='black';
+            document.querySelector('body').style.color ='white';
+            ">
+            <input type="button" value="day" onclick="
+            document.querySelector('body').style.backgroundColor ='white';
+            document.querySelector('body').style.color ='black';
+            ">
+       <br><br>
+       <input id="night_day" type="button" value="night" 
+       onclick=" if (document.querySelector('#night_day').value === 'night') {
+       document.querySelector('body').style.backgroundColor ='black';
+       document.querySelector('body').style.color ='white';
+       document.querySelector('#night_day').value = 'day';
+       } else {
+       document.querySelector('body').style.backgroundColor ='white';
+       document.querySelector('body').style.color ='black';
+       document.querySelector('#night_day').value = 'night';
+       } ">
+    </body>
+</html>
