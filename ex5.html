@@ -53,5 +53,57 @@
        document.querySelector('body').style.color ='black';
        document.querySelector('#night_day').value = 'night';
        } ">
+          <p>리팩토링이란 비효율적인 코드를 효율적으로 바꿔
+             가독성 높이고 유지보수 편하게 만드는 것</p>
+          <p>id를 없애고 this로 정해주기</p>
+       <input type="button" value="night" 
+       onclick=" if (this.value === 'night') {
+       document.querySelector('body').style.backgroundColor ='black';
+       document.querySelector('body').style.color ='white';
+       this.value = 'day';
+       } else {
+       document.querySelector('body').style.backgroundColor ='white';
+       document.querySelector('body').style.color ='black';
+       this.value = 'night';
+       }">
+          <p>한번 더 리팩토링 target 정해주기</p>
+       <input type="button" value="night" onclick=" 
+       var target = document.querySelector('body');
+       if (this.value === 'night') {
+       target.style.backgroundColor ='black';
+       target.style.color ='white';
+       this.value = 'day';
+       } else {
+       target.style.backgroundColor ='white';
+       target.style.color ='black';
+       this.value = 'night';
+       }">
+       <p>배열과 반복문을 넣어서 링크 색깔도 바꿔봅시다.</p>
+       <a href="ex4.html">javascript 실습</a><br>
+       <input type="button" value="night" onclick=" 
+       var target = document.querySelector('body');
+       if (this.value === 'night') {
+       target.style.backgroundColor ='black';
+       target.style.color ='white';
+       this.value = 'day';
+       var alist = document.querySelectorAll('a');
+       var i = 0;
+       while(i < alist.length){
+       alist[i].style.color = 'powderblue';
+       i=i+1;
+       }
+
+       } else {
+       target.style.backgroundColor ='white';
+       target.style.color ='black';
+       this.value = 'night';
+       var alist = document.querySelectorAll('a');
+       var i = 0;
+       while(i < alist.length){
+       alist[i].style.color = 'blue';
+       i=i+1;
+       }
+       }">
+       
     </body>
 </html>
