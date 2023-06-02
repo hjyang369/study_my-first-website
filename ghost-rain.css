@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+
+#bg {
+  width: 800px;
+  height: 500px;
+  position: relative;
+
+  background: url("./images/bg.png") no-repeat;
+  background-size: cover;
+
+  margin: 0 auto;
+}
+#hero {
+  width: 35px;
+  height: 54px;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+
+  background: url("./images/hero.png") no-repeat;
+}
+
+#hero.stop {
+  background-position: 0px 0px;
+}
+#hero.right {
+  background-position: -105px 0px;
+}
+#hero.left {
+  background-position: -70px 0px;
+}

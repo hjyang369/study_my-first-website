@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        .js{
+            font-weight: bold;
+            color:yellowgreen;
+        }
+        #first{
+            color:green;
+        }
+        span{
+            color:blue
+        } 
+        /* 그냥 span 적으면 모든 span에 적용*/
+        /* 우선순위 id>class>span */
+  
+    </style>
+</head>    
+<body>
+ <h1><a href="index.html">WEB</a></h1>
+ <h2 style="background-color: coral; 
+ color: powderblue;">Javascript</h2>
+ <p>CSS 연습 파일</p>
+ <p>
+  <div style="font-weight:bold;">JavaScript</div> 
+  <!-- div 화면 전체 쓰는 css라서 자동 엔터 됨-->
+  <span id="first" class="js">Javascript</span>,
+  <!--span 부분만 쓰는 css라서 문단안에 들어가 있음-->
+  <!--
+    .class는 grup(1학년1반) 
+            포괄적으로 여러번 쓰면서 묶어줄 수 있음 
+    #id는 식별(학번) 
+         전체 중에 똑같은 이름을 반복적으로 쓸 수 없음
+         class 위에 id를 둬서 강조해주는 역할
+        -->
+ often abbreviated as JS, is a 
+ programming language that is one of the core 
+ technologies of the World Wide Web, alongside 
+ <span>HTML</span> and <span>CSS</span>. As of 2022, 98% of websites use 
+ <span class="js">Javascript</span> on the client side for webpage 
+ behavior, often incorporating third-party 
+ libraries. All major web browsers have a 
+ dedicated <span class="js">Javascript</span> engine to execute the code 
+ on users' devices.
+ </p>
+</body>
+</html>

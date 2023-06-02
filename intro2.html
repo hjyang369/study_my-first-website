@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="introduce.css" rel="stylesheet" type="text/css"/>
+        <title>양회진의 자기소개서</title>
+        <script>
+         function nightDayHandler(self){
+           var target = document.querySelector('body');
+           if (self.value === 'night') {
+           target.style.backgroundColor ='black';
+           target.style.color ='white';
+           self.value = 'day';
+           var alist = document.querySelectorAll('a');
+           var i = 0;
+           while(i < alist.length){
+           alist[i].style.color = 'powderblue';
+           i=i+1;
+           }
+   
+           } else {
+           target.style.backgroundColor ='white';
+           target.style.color ='black';
+           self.value = 'night';
+           var alist = document.querySelectorAll('a');
+           var i = 0;
+           while(i < alist.length){
+           alist[i].style.color = 'blue';
+           i=i+1;
+             }
+            }
+           }
+       </script>
+    </head>
+    <body>
+      <div class="full2">
+      <div class="home">
+         <a class="homebutton" href="introduce.html"><img alt="hoejin's Home" src="./images/home.png"></a>
+         <button class="daynight" onclick="nightDayHandler(this)">
+           <img src="./images/free-icon-moon-8550164.png">
+         </button>
+      </div>
+
+       <div>
+         <h1 style="text-align: center;">Favorite</h1>
+         <div class="container2">
+          <div class="travel">
+             <img alt="travel" src="./images/IMG_4395.jpg">
+             <img alt="travel" src="./images/IMG_4667.jpg">
+             <img alt="travel" src="./images/IMG_5224.jpg">
+             <img alt="travel" src="./images/IMG_5383.jpg">
+             <img alt="travel" src="./images/IMG_6396.jpg">
+          </div>
+
+          <div class="food">
+            <img alt="food" src="./images/food_0480.jpg">
+            <img alt="food" src="./images/food_0776.jpg">
+            <img alt="food" src="./images/food_4171.jpeg">
+            <img alt="food" src="./images/food_5362.jpeg">
+            <img alt="food" src="./images/food_7549.jpg">
+         </div>
+
+         <div class="sea">
+            <img alt="sea" src="./images/바다1.jpg">
+            <img alt="sea" src="./images/바다2.jpg">
+            <img alt="sea" src="./images/바다3.jpeg">
+            <img alt="sea" src="./images/바다4.jpeg">
+            <img alt="sea" src="./images/바다5.jpeg">
+         </div>
+        </div>
+         <div class="h">
+            <h2>travel</h2>
+            <h2>food</h2>
+            <h2>sea</h2>
+         </div>
+         <h5 style="text-align: center; color: gray;">스크롤을 옆으로 넘겨보세요.</h5>
+      </div>
+    </body>
+</html>

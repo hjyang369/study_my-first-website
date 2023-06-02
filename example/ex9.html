@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            var Links = {
+                SetColor:function (color){
+              var alist = document.querySelectorAll('a');
+              var i = 0;
+              while(i < alist.length){
+                  alist[i].style.color = color;
+                  i=i+1;
+              }
+             }
+            }
+            
+            var Body = {
+                SetColor : function (color){
+                  document.querySelector('body').style.color =color;
+                },
+                SetBackgroundColor : function (color){
+                  document.querySelector('body').style.backgroundColor =color; 
+                }
+            }
+
+            function nightDayHandler(self){
+              var target = document.querySelector('body');
+              if (self.value === 'night') {
+              Body.SetBackgroundColor('black');
+              Body.SetColor('white');
+              self.value = 'day';
+              Links.SetColor('powderblue');
+ 
+              } else {
+              Body.SetBackgroundColor('white');
+              Body.SetColor('black');
+              self.value = 'night';
+              Links.SetColor('blue');
+                }
+               }
+        </script>
+    </head>
+    <body>
+        <h1>객체</h1>
+        <ul>
+            <li>연관된 함수와 연관된 변수를 같은 이름으로 그룹을 지어 정리정돈 하는 것</li>
+            <li>like 폴더</li>
+            <li>객체에 속해있는 함수는 함수로 치지 않고 method라고 함</li>
+        </ul>
+        <a href="JS example.html">자바스크립트 실습</a>
+
+        <input id="night_day" type="button" value="night" onclick=" 
+        nightDayHandler(this);
+        ">
+       <h2>1.Object</h2>
+       <h3>ㄱ.Create</h3>
+       <script> 
+       var coworkers = { //객체는 중괄호, 배열은 대괄호
+           "programmer":"egoing",
+           "designer":"leeche"
+       };
+       document.write("programmer : "+coworkers.programmer+"<br>");
+       document.write("designer : "+coworkers.designer+"<br>");
+       coworkers.bookkeeper = "duru";
+       document.write("bookkeeper : "+coworkers.bookkeeper+"<br>");
+       coworkers["data scientist"] = "taeho"; //배열은 []인데 띄어쓰기가 안되니까 index형식으로 key를 가지고 옴
+       document.write("data scientist : "+coworkers["data scientist"]+"<br>");
+       </script> 
+       <h3>ㄴ.Iterate</h3>
+       <script>
+        for(var key in coworkers) { //객체 안에 있는 키값들을 가져오는 반복문 for, 반복문은 key 배열은 index
+            document.write(coworkers[key]+'<br>');
+        } //이름 불러냄
+        
+        for(var key in coworkers) { 
+            document.write(key+'<br>');
+        } //직업 불러냄
+        
+        for(var key in coworkers) { 
+            document.write(key+':'+coworkers[key]+'<br>');
+        } //둘다 불러냄
+       </script>
+
+       <h3>ㄷ.Property & Method</h3>
+       <ul>
+          <li>property란 객체에 소속되어있는 변수</li>
+          <li>Method란 객체에 소속된 변수로 함수를 사용한 것</li>
+       </ul>
+       <script>
+        coworkers.showAll =function() {
+            for(var key in coworkers) { 
+            document.write(key+':'+coworkers[key]+'<br>');
+            } 
+        }
+        coworkers.showAll();
+
+        coworkers.showAll =function() {
+            for(var key in this) { 
+            document.write(key+':'+this[key]+'<br>');
+            } 
+        }//coworkers를 this로 변경했기때문에 coworkers라는 이름이 바끼더라도 이 코딩에는 문제가 없음
+        coworkers.showAll();
+
+        //번외 함수를 정의 하는 방법
+        //1 coworkers.showAll =function(){}
+        //2 var showAll = function(){}
+        //3 function showAll(){}
+       </script>
+    </body>
+</html>
