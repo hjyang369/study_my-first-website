@@ -13,6 +13,7 @@ function changeColor() {
     pwValue.length >= 5
   ) {
     loginButton.style.backgroundColor = "#0095f6";
+    //disabled 속성: 해당 요소가 비활성화
     loginButton.disabled = false;
   } else {
     loginButton.style.backgroundColor = "#cae0f9";
@@ -22,9 +23,11 @@ function changeColor() {
 }
 
 function moveLink() {
+  //로그인 버튼 누르면 메인 페이지로 이동하도록 링크 넣어줌
   location.replace("main.html");
 }
 
+//keyup event 발생 시 로그인 버튼 색 변경되도록
 idForm.addEventListener("keyup", changeColor);
 pwForm.addEventListener("keyup", changeColor);
 loginButton.addEventListener("click", moveLink);
