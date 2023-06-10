@@ -1,0 +1,50 @@
+.wecodeBox {
+  border: 1px solid #ddd;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.lastBox {
+  overflow: hidden;
+}
+
+.mainPage, .homePage {
+  height: 200px;
+}
+
+header {
+  background-color: yellow;
+}
+
+aside {
+  width : 200px;
+  background-color: green;
+}
+
+section {
+  background-color: blue;
+}
+
+.mainPage aside {
+  float: left;
+}
+.homePage section {
+  float: right;
+}
+  
+
+

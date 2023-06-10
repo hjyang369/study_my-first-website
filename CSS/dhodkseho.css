@@ -1,0 +1,58 @@
+div {
+    display : flex;
+    flex-flow : column wrap;
+    grid-gap: 1rem;
+    
+  }
+
+  .container {
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search{
+    width: 120%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: auto;
+    border: 2px solid #bbbbbb;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+  }
+  .search input{
+    flex: 1;
+    border: none;
+  }
+  .search img {
+    width: 20px;
+    height: 20px;
+  }
+  .search_left {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .button {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  button {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 8px;
+    background: #e5e3e3;
+    color: gray;
+    flex-direction:row;
+    justify-content:center;
+  }
+  
+  .last{
+    align-self:center;
+    text-align: center;
+  }
