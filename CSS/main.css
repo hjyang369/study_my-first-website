@@ -270,7 +270,7 @@ article {
   height: 15px;
   margin: 5px;
   background-color: #f6f6f6;
-  background-image: url(/images/heart.png);
+  background-image: url(../images/heart.png);
   background-size: 15px;
   border: solid 0px;
 }
@@ -281,7 +281,7 @@ article {
   margin: 5px;
   padding: 0px;
   background-color: #f6f6f6;
-  background-image: url(/images/x.png);
+  background-image: url(../images/x.png);
   background-size: 13px;
   border: solid 0px;
 }
@@ -291,7 +291,7 @@ article {
   height: 15px;
   margin: 5px;
   background-color: #f6f6f6;
-  background-image: url(/images/redheart.png);
+  background-image: url(../images/redheart.png);
   background-size: 15px;
   border: solid 0px;
 }

@@ -24,7 +24,7 @@ function changeColor() {
 
 function moveLink() {
   //로그인 버튼 누르면 메인 페이지로 이동하도록 링크 넣어줌
-  location.replace("main.html");
+  location.replace("westaMain.html");
 }
 
 //keyup event 발생 시 로그인 버튼 색 변경되도록

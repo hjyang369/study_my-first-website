@@ -2,7 +2,7 @@
   "name": "my-first-website",
   "version": "1.0.0",
   "description": "",
-  "main": "color.js",
+  "main": "./js/dayNightColor.js",
   "directories": {
     "example": "example"
   },

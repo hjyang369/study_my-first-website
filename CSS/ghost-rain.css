@@ -7,7 +7,7 @@ h1 {
   height: 500px;
   position: relative;
 
-  background: url("./images/bg.png") no-repeat;
+  background: url("../images/bg.png") no-repeat;
   background-size: cover;
 
   margin: 0 auto;
@@ -18,8 +18,7 @@ h1 {
   position: absolute;
   left: 50%;
   bottom: 0%;
-
-  background: url("./images/hero.png") no-repeat;
+  background: url("../images/hero.png") no-repeat;
 }
 
 #hero.stop {
